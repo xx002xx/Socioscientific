@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_kosong"
+    tools:context=".Materi_pendukung">
+
+    <TextView
+        android:id="@+id/materi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materi Pendukung"
+        android:layout_marginTop="140dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/per_iklim"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:src="@drawable/perubahan_iklim"
+        android:layout_below="@+id/materi"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/usn_senyawa"
+        android:layout_below="@+id/per_iklim"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:src="@drawable/unsur_senyawa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/per_iklim2"
+        android:layout_below="@+id/usn_senyawa"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:src="@drawable/perubahan_iklim2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/per_iklimd"
+        android:layout_below="@+id/per_iklim2"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pencemaran_iklim"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dil_1"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/per_iklimd"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_2"
+        android:text=" Lanjutkan Membuat Keputusan Dilema 1 "
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dil_2"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/btn_dil_1"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corner_2"
+        android:text=" Lanjutkan Membuat Keputusan Dilema 2 "
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dil_3"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/btn_dil_2"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corner_2"
+        android:text=" Lanjutkan Membuat Keputusan Dilema 3 "
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:drawableStart="@drawable/home_playslist"
+        android:id="@+id/txthome"
+        />
+
+</RelativeLayout>

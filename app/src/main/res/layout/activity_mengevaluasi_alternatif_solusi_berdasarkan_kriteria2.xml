@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mengevaluasi_alternatif_solusi_berdasarkan_kriteria_2"
+    tools:context=".Mengevaluasi_alternatif_solusi_berdasarkan_kriteria_2">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_but2"
+        android:text=" MATERI PENDUKUNG "
+        android:id="@+id/btnjawaban"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+    <WebView
+        android:id="@+id/VideoView"
+        android:layout_width="190dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="200dp"
+        />
+
+    <ImageView
+        android:id="@+id/next_sli"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_nex_slide"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:drawableStart="@drawable/home_playslist"
+        android:id="@+id/txthome"
+        />
+
+</RelativeLayout>

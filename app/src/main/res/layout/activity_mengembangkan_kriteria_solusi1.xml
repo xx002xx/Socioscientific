@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mengembangkan_kriteria_solusi_1"
+    tools:context=".Mengembangkan_kriteria_solusi_1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:drawableStart="@drawable/home_playslist"
+        android:id="@+id/txthome"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/luser2"
+        android:id="@+id/luser1"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/isi_identifikasi1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kriteria Untuk Solusi 1"
+            android:lines="3"
+            android:inputType="textMultiLine"
+            android:backgroundTint="#f0e4c8"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/luser3"
+        android:id="@+id/luser2"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/isi_identifikasi2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kriteria Untuk Solusi 2"
+           android:lines="3"
+            android:inputType="textMultiLine"
+            android:backgroundTint="#f0e4c8"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/lns"
+        android:id="@+id/luser3"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/isi_identifikasi3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kriteria Untuk Solusi 3"
+            android:lines="3"
+            android:inputType="textMultiLine"
+            android:backgroundTint="#f0e4c8"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lns"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text=" Teks Masalah "
+            android:id="@+id/txtmasalah"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text=" Kriteria Jawaban "
+            android:id="@+id/btnjawaban"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

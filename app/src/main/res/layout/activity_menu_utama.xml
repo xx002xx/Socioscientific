@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_utama"
+    tools:context=".MenuUtama">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:drawableStart="@drawable/home_button"
+        android:id="@+id/txthome"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="120dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:id="@+id/relativeLayout">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/verlay"
+        android:paddingTop="10dp">
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Utama"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/verlay"
+            tools:ignore="NotSibling" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/lampu"
+                android:scaleType="fitCenter"
+                android:translationZ="90dp"
+                />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="Petunjuk Belajar"
+            android:textAllCaps="false"
+            android:id="@+id/ptbljrmenu"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/buku"
+                android:scaleType="fitCenter"
+                android:translationZ="90dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:text="Kompetensi Dasar"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:id="@+id/kompetensidasar"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:text="Peta Konsep"
+                android:id="@+id/petakonsep"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pazle"
+                android:scaleType="fitCenter"
+                android:translationZ="90dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mat"
+            android:scaleType="fitCenter"
+            android:translationZ="90dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="Materi"
+            android:id="@+id/btn_materi"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/list"
+            android:scaleType="fitCenter"
+            android:translationZ="90dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="Evaluasi"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_eval"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ref"
+            android:scaleType="fitCenter"
+            android:translationZ="90dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="Referensi"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_ref"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/glosarium"
+            android:scaleType="fitCenter"
+            android:translationZ="90dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="Glosarium"
+            android:id="@+id/btn_glosarium"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
